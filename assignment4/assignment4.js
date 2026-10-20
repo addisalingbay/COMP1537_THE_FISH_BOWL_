@@ -3,13 +3,14 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 const fs = require("fs");
+const path = require("path");
 
-app.use("/js", express.static("./public/js"));
-app.use("/css", express.static("./public/css"));
-app.use("/img", express.static("./public/img"));
+app.use("/js", express.static(path.join(__dirname, "public/js")));
+app.use("/css", express.static(path.join(__dirname, "public/css")));
+app.use("/img", express.static(path.join(__dirname, "public/img")));
 
 app.get("/", function (req, res) {
-    let doc = fs.readFileSync("./app/html/index.html", "utf8");
+    let doc = fs.readFileSync(path.join(__dirname, "app/html/index.html"), "utf8");
     res.send(doc);
 });
 

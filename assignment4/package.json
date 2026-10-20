@@ -1,0 +1,12 @@
+{
+  "name": "the-fish-bowl",
+  "version": "1.0.0",
+  "description": "COMP1537 Assignment 4 - The Fish Bowl Aquarium",
+  "main": "assignment4.js",
+  "scripts": {
+    "start": "node assignment4.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

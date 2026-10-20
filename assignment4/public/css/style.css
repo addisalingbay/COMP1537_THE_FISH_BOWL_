@@ -447,7 +447,7 @@ figcaption {
     grid-template-columns: 100%;
   }
 
-  #news {
+  #exhibits {
     border-right: none;
     border-bottom: 1px solid #000;
   }
@@ -568,7 +568,7 @@ figcaption {
     grid-template-columns: 100%;
   }
 
-  #news {
+  #exhibits {
     border-right: none;
     border-bottom: 1px solid #000;
   }
